@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ATSearchViewController.h
 //  AwesomeTips
 //
 //  Created by Zubin Kang on 2018/5/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ATSearchViewController : UITableViewController <UISearchResultsUpdating>
 
 @end

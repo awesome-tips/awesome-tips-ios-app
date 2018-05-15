@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B39C1020AAD31D00E072EE /* ATMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B39C0F20AAD31D00E072EE /* ATMainViewController.m */; };
+		89B39C1320AAD34A00E072EE /* ATSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B39C1220AAD34A00E072EE /* ATSearchViewController.m */; };
+		89B39C1920AAD40400E072EE /* ATNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B39C1820AAD40400E072EE /* ATNetworkManager.m */; };
+		89B39C1C20AAD45300E072EE /* ATFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B39C1B20AAD45300E072EE /* ATFeedTableViewCell.m */; };
+		89B39C1F20AAD49F00E072EE /* ATFeedItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B39C1E20AAD49F00E072EE /* ATFeedItemModel.m */; };
+		89B39C2120AADA8F00E072EE /* app.kangzubin.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 89B39C2020AADA8F00E072EE /* app.kangzubin.com.cer */; };
 		89F9FE7D20AAC74200557D44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9FE7C20AAC74200557D44 /* AppDelegate.m */; };
-		89F9FE8020AAC74200557D44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9FE7F20AAC74200557D44 /* ViewController.m */; };
-		89F9FE8320AAC74200557D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F9FE8120AAC74200557D44 /* Main.storyboard */; };
 		89F9FE8520AAC74300557D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F9FE8420AAC74300557D44 /* Assets.xcassets */; };
 		89F9FE8820AAC74300557D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F9FE8620AAC74300557D44 /* LaunchScreen.storyboard */; };
 		89F9FE8B20AAC74300557D44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F9FE8A20AAC74300557D44 /* main.m */; };
@@ -37,12 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89B39C0E20AAD31D00E072EE /* ATMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATMainViewController.h; sourceTree = "<group>"; };
+		89B39C0F20AAD31D00E072EE /* ATMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATMainViewController.m; sourceTree = "<group>"; };
+		89B39C1120AAD34A00E072EE /* ATSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSearchViewController.h; sourceTree = "<group>"; };
+		89B39C1220AAD34A00E072EE /* ATSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATSearchViewController.m; sourceTree = "<group>"; };
+		89B39C1720AAD40400E072EE /* ATNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATNetworkManager.h; sourceTree = "<group>"; };
+		89B39C1820AAD40400E072EE /* ATNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATNetworkManager.m; sourceTree = "<group>"; };
+		89B39C1A20AAD45300E072EE /* ATFeedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATFeedTableViewCell.h; sourceTree = "<group>"; };
+		89B39C1B20AAD45300E072EE /* ATFeedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATFeedTableViewCell.m; sourceTree = "<group>"; };
+		89B39C1D20AAD49F00E072EE /* ATFeedItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATFeedItemModel.h; sourceTree = "<group>"; };
+		89B39C1E20AAD49F00E072EE /* ATFeedItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATFeedItemModel.m; sourceTree = "<group>"; };
+		89B39C2020AADA8F00E072EE /* app.kangzubin.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = app.kangzubin.com.cer; sourceTree = "<group>"; };
 		89F9FE7820AAC74200557D44 /* AwesomeTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F9FE7B20AAC74200557D44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89F9FE7C20AAC74200557D44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		89F9FE7E20AAC74200557D44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		89F9FE7F20AAC74200557D44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		89F9FE8220AAC74200557D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F9FE8420AAC74300557D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F9FE8720AAC74300557D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89F9FE8920AAC74300557D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89B39C1420AAD37600E072EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89B39C1D20AAD49F00E072EE /* ATFeedItemModel.h */,
+				89B39C1E20AAD49F00E072EE /* ATFeedItemModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89B39C1520AAD38400E072EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89B39C1A20AAD45300E072EE /* ATFeedTableViewCell.h */,
+				89B39C1B20AAD45300E072EE /* ATFeedTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89B39C1620AAD38E00E072EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89B39C0E20AAD31D00E072EE /* ATMainViewController.h */,
+				89B39C0F20AAD31D00E072EE /* ATMainViewController.m */,
+				89B39C1120AAD34A00E072EE /* ATSearchViewController.h */,
+				89B39C1220AAD34A00E072EE /* ATSearchViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		89F9FE6F20AAC74200557D44 = {
 			isa = PBXGroup;
 			children = (
@@ -108,15 +149,13 @@
 		89F9FE7A20AAC74200557D44 /* AwesomeTips */ = {
 			isa = PBXGroup;
 			children = (
-				89F9FE8920AAC74300557D44 /* Info.plist */,
 				89F9FE8A20AAC74300557D44 /* main.m */,
 				89F9FE7B20AAC74200557D44 /* AppDelegate.h */,
 				89F9FE7C20AAC74200557D44 /* AppDelegate.m */,
-				89F9FE7E20AAC74200557D44 /* ViewController.h */,
-				89F9FE7F20AAC74200557D44 /* ViewController.m */,
-				89F9FE8120AAC74200557D44 /* Main.storyboard */,
-				89F9FE8620AAC74300557D44 /* LaunchScreen.storyboard */,
-				89F9FE8420AAC74300557D44 /* Assets.xcassets */,
+				89F9FEB320AAD10C00557D44 /* Business */,
+				89F9FEB420AAD12F00557D44 /* Common */,
+				89F9FEB620AAD1B400557D44 /* Resources */,
+				89F9FEB520AAD15D00557D44 /* Supporting Files */,
 			);
 			path = AwesomeTips;
 			sourceTree = "<group>";
@@ -146,6 +185,43 @@
 				89F9FEAE20AAC87C00557D44 /* XMNetworking.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89F9FEB320AAD10C00557D44 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				89B39C1420AAD37600E072EE /* Models */,
+				89B39C1520AAD38400E072EE /* Views */,
+				89B39C1620AAD38E00E072EE /* Controllers */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		89F9FEB420AAD12F00557D44 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				89B39C1720AAD40400E072EE /* ATNetworkManager.h */,
+				89B39C1820AAD40400E072EE /* ATNetworkManager.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		89F9FEB520AAD15D00557D44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F9FE8920AAC74300557D44 /* Info.plist */,
+				89B39C2020AADA8F00E072EE /* app.kangzubin.com.cer */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89F9FEB620AAD1B400557D44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89F9FE8620AAC74300557D44 /* LaunchScreen.storyboard */,
+				89F9FE8420AAC74300557D44 /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +328,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B39C2120AADA8F00E072EE /* app.kangzubin.com.cer in Resources */,
 				89F9FE8820AAC74300557D44 /* LaunchScreen.storyboard in Resources */,
 				89F9FE8520AAC74300557D44 /* Assets.xcassets in Resources */,
-				89F9FE8320AAC74200557D44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F9FE8020AAC74200557D44 /* ViewController.m in Sources */,
+				89B39C1920AAD40400E072EE /* ATNetworkManager.m in Sources */,
 				89F9FE8B20AAC74300557D44 /* main.m in Sources */,
+				89B39C1C20AAD45300E072EE /* ATFeedTableViewCell.m in Sources */,
+				89B39C1320AAD34A00E072EE /* ATSearchViewController.m in Sources */,
+				89B39C1F20AAD49F00E072EE /* ATFeedItemModel.m in Sources */,
+				89B39C1020AAD31D00E072EE /* ATMainViewController.m in Sources */,
 				89F9FE7D20AAC74200557D44 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +417,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		89F9FE8120AAC74200557D44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89F9FE8220AAC74200557D44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		89F9FE8620AAC74300557D44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,7 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangzubin.AwesomeTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -502,7 +574,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangzubin.AwesomeTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

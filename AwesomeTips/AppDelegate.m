@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ATNetworkManager.h"
+#import "ATMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [ATNetworkManager setup];
+    ATMainViewController *mainViewController = [[ATMainViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *rootNavigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = rootNavigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
