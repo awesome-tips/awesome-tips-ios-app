@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.1.0",
+  "iOS" : [
+    {
+      "name" : "XMNetworking",
+      "hash" : "e9d409561b8c84bee834174a8dced10af8aa172d065c2eb2e3cf86f0696232aa"
+    }
+  ]
+}
