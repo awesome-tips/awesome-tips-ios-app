@@ -9,7 +9,7 @@
 #import "ATNetworkManager.h"
 #import <objc/runtime.h>
 
-#define AWESOME_TIPS_API_HOST @"https://app.kangzubin.com/iostips/api/"
+#define AWESOME_TIPS_API_HOST @"https://tips.kangzubin.com/api/"
 
 NSString * const ATNetworkErrorDomain = @"ATNetworkErrorDomain";
 
@@ -47,15 +47,15 @@ static NSError * ATNetworkErrorGenerator(NSInteger code, NSString *msg) {
 #endif
     }];
     
-    // 加载 app.kangzubin.com 域名的证书
+    // 加载 tips.kangzubin.com 域名的证书
     NSBundle *bundle = [NSBundle mainBundle];
-    NSString *path = [bundle pathForResource:@"app.kangzubin.com" ofType:@"cer"];
+    NSString *path = [bundle pathForResource:@"tips.kangzubin.com" ofType:@"cer"];
     NSData *certificateData = [NSData dataWithContentsOfFile:path];
     if (certificateData) {
         [XMCenter addSSLPinningCert:certificateData];
     }
-    // 对 app.kangzubin.com 域名下的接口做 SSL Pinning 验证
-    [XMCenter addSSLPinningURL:@"https://app.kangzubin.com"];
+    // 对 tips.kangzubin.com 域名下的接口做 SSL Pinning 验证
+    [XMCenter addSSLPinningURL:@"https://tips.kangzubin.com"];
     
     // 请求预处理插件
     [XMCenter setRequestProcessBlock:^(XMRequest *request) {

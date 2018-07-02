@@ -31,7 +31,7 @@
 
 - (void)xm_setupViews {
     [self.tableView setTableFooterView:[UIView new]];
-    [self.tableView setEstimatedRowHeight:0];
+    [self.tableView setEstimatedRowHeight:[ATFeedTableViewCell cellHeight]];
     [self.tableView registerClass:[ATFeedTableViewCell class] forCellReuseIdentifier:[ATFeedTableViewCell reuseIdentifier]];
 }
 
@@ -83,7 +83,7 @@
 - (SFSafariViewController *)xm_getDetailViewControllerAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row < self.searchDataList.count) {
         ATFeedItemModel *model = self.searchDataList[indexPath.row];
-        if (model.url) {
+        if (model.url.length > 0) {
             NSURL *url = [NSURL URLWithString:model.url];
             SFSafariViewController *sfViewController = [[SFSafariViewController alloc] initWithURL:url];
             if (@available(iOS 11.0, *)) {
@@ -107,7 +107,7 @@
     }
     self.loadingSearchData = YES;
     [XMCenter sendRequest:^(XMRequest * _Nonnull request) {
-        request.api = @"feed/searchAll";
+        request.api = @"feed/search";
         request.httpMethod = kXMHTTPMethodGET;
         request.parameters = @{@"key": self.searchKeyword};
     } onSuccess:^(id  _Nullable responseObject) {

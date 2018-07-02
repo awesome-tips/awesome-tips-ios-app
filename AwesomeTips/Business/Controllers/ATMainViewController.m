@@ -50,7 +50,7 @@
         self.tableView.tableHeaderView = self.searchController.searchBar;
     }
     [self at_cleanTableViewFooter];
-    [self.tableView setEstimatedRowHeight:0];
+    [self.tableView setEstimatedRowHeight:[ATFeedTableViewCell cellHeight]];
     [self.tableView registerClass:[ATFeedTableViewCell class] forCellReuseIdentifier:[ATFeedTableViewCell reuseIdentifier]];
     [self.refreshControl addTarget:self action:@selector(at_shouldRefreshAction:) forControlEvents:UIControlEventValueChanged];
 }
@@ -128,7 +128,7 @@
 - (SFSafariViewController *)at_getDetailViewControllerAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row < self.dataList.count) {
         ATFeedItemModel *model = self.dataList[indexPath.row];
-        if (model.url) {
+        if (model.url.length > 0) {
             NSURL *url = [NSURL URLWithString:model.url];
             SFSafariViewController *sfViewController = [[SFSafariViewController alloc] initWithURL:url];
             if (@available(iOS 11.0, *)) {
@@ -184,7 +184,7 @@
         self.pageNum = 1;
     }
     [XMCenter sendRequest:^(XMRequest * _Nonnull request) {
-        request.api = @"feed/listAll";
+        request.api = @"feed/list";
         request.cached = YES;
         request.httpMethod = kXMHTTPMethodGET;
         request.parameters = @{@"page": @(self.pageNum)};
